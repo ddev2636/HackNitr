@@ -6,6 +6,9 @@ import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
 
+//imports
+import startupRoutes from "./routes/startup.js";
+import investorRoutes from "./routes/investor.js"; 
 
 
 //data imports
@@ -23,9 +26,12 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors());
+ app.use(cors());
+
 
 /* ROUTES */
+app.use("/startup", startupRoutes);
+app.use("/investor",investorRoutes);
 
 
 
