@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const InvestorSchema = new mongoose.Schema({
     name: {
@@ -29,4 +29,4 @@ const InvestorSchema = new mongoose.Schema({
 
 const Investor = mongoose.model('Investor',InvestorSchema);
 
-module.exports = Investor;
+export default Investor;

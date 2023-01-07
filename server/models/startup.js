@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const startupSchema = new mongoose.Schema({
-    companyName: {
+    company: {
         type: String,
         required: true
     },
-    name: {
+    Name: {
         type: String,
         required: true
     },
@@ -22,7 +22,7 @@ const startupSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    productDescription: {
+    description: {
         type: String,
         required: true
     }
@@ -30,4 +30,4 @@ const startupSchema = new mongoose.Schema({
 
 const Startup = mongoose.model('Startup',startupSchema);
 
-module.exports = Startup;
+export default Startup;

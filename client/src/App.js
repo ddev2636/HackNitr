@@ -1,10 +1,12 @@
 import React from 'react'
 import SignIn from './components/signin/SignIn';
+import SignUp from 'components/signup/SignUp';
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">     
+    <div className="">     
       <SignIn/>
+      {/* <SignUp/> */}
     </div>
   );
 }
