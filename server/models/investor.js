@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const InvestorSchema = new mongoose.Schema({
-    name: {
+    Name: {
         type: String,
         required: true
     },

@@ -31,10 +31,10 @@ export const register = async function (req, res) {
     const newStartUp = new Startup({
       company,
       Name,
-      phone,
+      phone,      
       email,
       password: passwordHash,
-      description,
+      description
     });
     const savedUser = await newStartUp.save();
 

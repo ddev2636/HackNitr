@@ -12,7 +12,7 @@ import Grid from "@mui/material/Grid";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 
-const SignUp = () => {
+const SignUpStartup = () => {
   const [formValue, setFormValue] = useState({
     email: "",
     password: "",
@@ -210,4 +210,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpStartup;
