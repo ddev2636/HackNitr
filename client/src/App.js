@@ -1,24 +1,29 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import SignIn from './components/signin/SignIn';
 import SignUpStartup from 'components/signup/SignUpStartup';
 import SignUpInvestor from 'components/signup/SignUpInvestor';
 import Home from './components/landing'
 import Home2 from './components/landing2'
-import Nav from './components/navbar'
+import Startups from 'components/startups/Startups';
+import Investors from 'investors/Investors';
+
+
 function App() {
   return (
     // <div className="">     
-    //   {/* <SignIn/> */}
-    //   {/* <SignUpStartup/> */}
-    //   <SignUpInvestor/>
+    //   <SignIn/>
+    //   {/* <SignUpStartup />
+    //   <SignUpInvestor/> */}
     // </div>
-     <div className=' text-white'>
-      <Nav/>
+    //  < className=' text-white'>
+    //   <Home/>
       
-      <Home/>
-      <Home2/>
-      <footer class="bg-blue-900 text-xs">© Seedy, Copyright 2023</footer>
-    </div>
+    //   {/* <Home2/> */}
+    //   <footer class="bg-blue-900 text-xs">© Seedy, Copyright 2023</footer>
+      // <Startups/>
+      <Investors/>
+      
+    
   );
 }
 

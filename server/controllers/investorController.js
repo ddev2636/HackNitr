@@ -32,3 +32,13 @@ export const register = async function(req,res){
         res.status(500).json({ error: error.message });
       }
 }
+
+export const getInvestors = async (req, res) => {
+  try {
+    //console.log(req.body);
+    const investor = await Investor.find();
+    res.status(200).json(investor);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
+  }
+};

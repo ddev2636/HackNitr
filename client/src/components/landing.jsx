@@ -2,7 +2,7 @@ import React from 'react'
 
 const landing = () => {
   return (
-    <div className="home text-white pt-40">
+    <div className="home text-white pt-40 w-[100vw] h-[100vh]">
       <div className="text-2xl pb-4 pl-10">Welcome to Seedy!</div>
       <div className="h">Where Investors </div>
       <div className="h">meet Startups</div>

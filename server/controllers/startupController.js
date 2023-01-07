@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 export const createSession = async function (req, res) {
-  //console.log(req.body);
+  console.log(req.body);
   //console.log("startup Signed In");
   try {
     const { email, password } = req.body;
@@ -41,5 +41,14 @@ export const register = async function (req, res) {
     res.status(201).json(savedUser);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+};
+export const getStartups = async (req, res) => {
+  try {
+    //console.log(req.body);
+    const startup = await Startup.find();
+    res.status(200).json(startup);
+  } catch (err) {
+    res.status(404).json({ message: err.message });
   }
 };
